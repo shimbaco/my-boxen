@@ -48,18 +48,22 @@ Homebrew::Formula <| |> -> Package <| |>
 node default {
   # core modules, needed for most things
   include git
+  include ruby
 
-  # include imagemagick
-  # include mysql
-  # include qt
-  # include redis
-  # include xquartz
-  # include wget
+  include imagemagick
+  include mysql
+  include qt
+  include redis
+  include xquartz
+  include wget
 
   # fail if FDE is not enabled
   if $::root_encrypted == 'no' {
     fail('Please enable full disk encryption and try again')
   }
+
+  # default ruby versions
+  include ruby::1-9-3
 
   # common, useful packages
   package {
