@@ -25,11 +25,11 @@ github 'gcc', '1.0.0'
 github 'git', "1.0.0"
 github 'homebrew', '1.0.0'
 github 'imagemagick', '1.1.0'
-github 'inifile', '0.9.0', repo: 'cprice-puppet/puppetlabs-inifile'
+github 'inifile', '0.9.0', :repo => 'cprice-puppet/puppetlabs-inifile'
 github 'mysql', '1.0.0'
 github 'qt', '1.0.0'
 github 'redis', '1.0.0'
-github 'stdlib', '3.0.0', repo: 'puppetlabs/puppetlabs-stdlib'
+github 'stdlib', '3.0.0', :repo => 'puppetlabs/puppetlabs-stdlib'
 # github 'sublime_text_2', '1.0.0'
 github 'sudo', '1.0.0'
 github 'xquartz', '1.0.0' # qtのインストールで使用
