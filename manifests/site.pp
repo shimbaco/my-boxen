@@ -49,12 +49,12 @@ node default {
   # core modules, needed for most things
   include git
 
-  include imagemagick
-  include mysql
-  include qt
-  include redis
-  include xquartz
-  include wget
+  # include imagemagick
+  # include mysql
+  # include qt
+  # include redis
+  # include xquartz
+  # include wget
 
   # fail if FDE is not enabled
   if $::root_encrypted == 'no' {
