@@ -7,7 +7,7 @@
 def github(name, version, options = nil)
   options ||= {}
   options[:repo] ||= "boxen/puppet-#{name}"
-  mod name, version, github_tarball: options[:repo]
+  mod name, version, :github_tarball => options[:repo]
 end
 
 # Core modules for a basic development environment. You can replace
@@ -16,7 +16,7 @@ end
 # Includes many of our custom types and providers, as well as global
 # config. Required.
 
-github 'boxen', '1.0.3'
+github 'boxen', '1.0.2'
 
 # Core modules for a basic development environment. You can replace
 # some/most of these if you want, but it's not recommended.
@@ -25,12 +25,12 @@ github 'gcc', '1.0.0'
 github 'git', "1.0.0"
 github 'homebrew', '1.0.0'
 github 'imagemagick', '1.1.0'
-github 'inifile', '0.9.0', repo: 'cprice-puppet/puppetlabs-inifile'
+github 'inifile',  '0.9.0', :repo => 'cprice-puppet/puppetlabs-inifile'
 github 'mysql', '1.0.0'
 github 'qt', '1.0.0'
 github 'redis', '1.0.0'
 github 'ruby', '1.0.0'
-github 'stdlib', '3.0.0', repo: 'puppetlabs/puppetlabs-stdlib'
+github 'stdlib',   '3.0.0', :repo => 'puppetlabs/puppetlabs-stdlib'
 # github 'sublime_text_2', '1.0.0'
 github 'sudo', '1.0.0'
 github 'xquartz', '1.0.0' # qtのインストールで使用
